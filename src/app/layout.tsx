@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function RootLayout() {
   return (
     <html lang="en">
-      <body className="antialiased bg-black py-5 px-2 md:p-10 relative">
+      <body className="antialiased bg-black relative">
         <Header />
         <HeroSection />
       </body>
