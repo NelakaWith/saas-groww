@@ -6,7 +6,7 @@ function Button({
   className = "",
   ...props
 }) {
-  const baseClasses = "inline-flex items-center gap-2 rounded-full";
+  const baseClasses = "inline-flex items-center gap-2 rounded-full transition";
 
   const renderIcon = () => {
     if (!icon) return null;
@@ -30,7 +30,7 @@ function Button({
   };
 
   const sizeClasses = {
-    sm: "px-3 py-2",
+    sm: "px-2 py-1",
     md: "px-4 py-2",
     lg: "px-6 py-4",
   };
@@ -41,13 +41,13 @@ function Button({
     secondary:
       "bg-white text-brand-300 hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand-300",
     outline:
-      "bg-transparent border border-neutral-500 text-neutral-500 hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-500",
+      "bg-transparent border border-white text-white hover:border-neutral-400 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-400",
   };
 
   const iconColor = {
     primary: "text-white",
     secondary: "text-brand-300",
-    outline: "text-neutral-500",
+    outline: "text-white",
   };
 
   const iconColorClass = iconColor[type] || "text-white";
