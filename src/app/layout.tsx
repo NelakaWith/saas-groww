@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Header from "@/components/common/header";
+import HeroSection from "@/components/sections/hero";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
@@ -6,14 +8,13 @@ export const metadata: Metadata = {
   description: "AI Driven Universal Finance tool you need",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout() {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased bg-black py-5 px-2 md:p-10 relative">
+        <Header />
+        <HeroSection />
+      </body>
     </html>
   );
 }
