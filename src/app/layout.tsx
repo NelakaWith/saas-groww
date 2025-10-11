@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/common/header";
 import HeroSection from "@/components/sections/hero";
+import Partners from "@/components/sections/partners";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout() {
       <body className="antialiased bg-black relative">
         <Header />
         <HeroSection />
+        <Partners />
       </body>
     </html>
   );
