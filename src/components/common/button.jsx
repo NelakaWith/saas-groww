@@ -32,7 +32,7 @@ function Button({
   const sizeClasses = {
     sm: "px-2 py-1",
     md: "px-4 py-2",
-    lg: "px-6 py-4",
+    lg: "px-6 py-3",
   };
 
   const typeClasses = {
