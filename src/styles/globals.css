@@ -42,6 +42,7 @@ body {
   font-family: "Poppins", Helvetica, sans-serif;
 }
 
+/* Common */
 @layer utilities {
   .glass-xl {
     box-sizing: border-box;
@@ -59,8 +60,45 @@ body {
       background: rgba(255, 255, 255, 0.12);
     }
   }
+
+  /* Partners */
+  /* Hide scrollbar but keep scrolling (cross-browser) */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Scroll fade overlays on left/right edges (black to transparent) */
+  .scroll-fade {
+    position: relative;
+  }
+
+  .scroll-fade::before,
+  .scroll-fade::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 128px;
+    pointer-events: none;
+    z-index: 30;
+  }
+
+  .scroll-fade::before {
+    left: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
+
+  .scroll-fade::after {
+    right: 0;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
 }
 
+/* Hero */
 .hero-glow {
   background: #e74425;
   background: radial-gradient(
