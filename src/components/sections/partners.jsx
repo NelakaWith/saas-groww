@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 const partnerLogos = [
-  "/partnerLogo01.svg",
-  "/partnerLogo02.svg",
-  "/partnerLogo03.svg",
-  "/partnerLogo04.svg",
-  "/partnerLogo05.svg",
+  "/partners/partnerLogo01.svg",
+  "/partners/partnerLogo02.svg",
+  "/partners/partnerLogo03.svg",
+  "/partners/partnerLogo04.svg",
+  "/partners/partnerLogo05.svg",
 ];
 
 function Partners() {

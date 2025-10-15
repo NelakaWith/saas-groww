@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/common/header";
 import HeroSection from "@/components/sections/hero";
 import Partners from "@/components/sections/partners";
+import WhyUs from "@/components/sections/whyUs";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout() {
         <Header />
         <HeroSection />
         <Partners />
+        <WhyUs />
       </body>
     </html>
   );
