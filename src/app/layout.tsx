@@ -4,6 +4,7 @@ import HeroSection from "@/components/sections/hero";
 import Partners from "@/components/sections/partners";
 import WhyUsInsights from "@/components/sections/whyUsInsights";
 import WhyUsBeyondLimits from "@/components/sections/whyUsBeyondLimits";
+import WhyUsCommunity from "@/components/sections/whyUsCommunity";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout() {
         <Partners />
         <WhyUsInsights />
         <WhyUsBeyondLimits />
+        <WhyUsCommunity />
       </body>
     </html>
   );

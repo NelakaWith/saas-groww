@@ -1,3 +1,5 @@
+import SectionTag from "../common/sectionTag";
+
 const insights = [
   {
     icon: "/iconEth.svg",
@@ -29,9 +31,7 @@ function WhyUsInsights() {
   return (
     <section className="mt-16">
       <div className="text-center w-full">
-        <div className="inline-block px-4 py-2 mx-auto bg-neutral-800 border-2 border-neutral-400 rounded-full text-neutral-50 text-center">
-          Why Choose Us
-        </div>
+        <SectionTag title="Why Choose Us" />
         <h2 className="mt-7 mx-auto max-w-[360px] font-bold text-3xl md:text-6xl text-center">
           Get Clear Insights into Your Start-up’s Finances
         </h2>
