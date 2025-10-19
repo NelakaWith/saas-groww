@@ -25,7 +25,7 @@ const insights = [
   },
 ];
 
-function WhyUs() {
+function WhyUsInsights() {
   return (
     <section className="mt-16">
       <div className="text-center w-full">
@@ -58,4 +58,4 @@ function WhyUs() {
   );
 }
 
-export default WhyUs;
+export default WhyUsInsights;
