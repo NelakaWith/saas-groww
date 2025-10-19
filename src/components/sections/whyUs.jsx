@@ -36,8 +36,23 @@ function WhyUs() {
           Get Clear Insights into Your Start-up’s Finances
         </h2>
       </div>
-      <div className="relative scroll-fade mt-8">
-        <div className="px-4 inline-flex items-center overflow-x-auto w-full no-scrollbar "></div>
+      <div className="relative scroll-fade mt-16">
+        <div className="px-4 flex items-stretch overflow-x-auto w-full no-scrollbar">
+          {insights.map((insight, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-72 md:w-80 lg:w-96 glass-xl p-6 m-4 rounded-xl flex flex-col self-stretch justify-between"
+            >
+              <img
+                src={insight.icon}
+                alt={`${insight.title} Icon`}
+                className="w-8 mb-4"
+              />
+              <h3 className="text-xl font-semibold mb-2">{insight.title}</h3>
+              <p className="text-neutral-400">{insight.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
