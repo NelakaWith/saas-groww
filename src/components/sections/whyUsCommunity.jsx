@@ -57,7 +57,7 @@ function WhyUsCommunity() {
         </div>
         {/* bottom half */}
         <div className="mt-8 flex-col px-8">
-          <div className="flex flex-col gap-8">
+          <div className="grid grid-cols-1 grid-rows-3 auto-rows-fr gap-8">
             <div className="grid grid-cols-2 gap-6 flex-1">
               {Array.from({ length: 4 }).map((_, index) => (
                 <div
@@ -76,7 +76,7 @@ function WhyUsCommunity() {
                 </div>
               ))}
             </div>
-            <div>
+            <div className="flex-1">
               <Image
                 src="/coins.png"
                 alt="Tailored Financial Plans"
@@ -85,7 +85,7 @@ function WhyUsCommunity() {
                 className="w-full h-auto mx-auto"
               />
             </div>
-            <div className="flex-1 rounded-2xl glass-xl p-8">
+            <div className="rounded-2xl glass-xl p-8 flex-1">
               <h2 className="font-bold text-2xl mt-4">10 Million+ Downloads</h2>
               <p className="mt-2">
                 Join millions of users who have downloaded Groww and are
