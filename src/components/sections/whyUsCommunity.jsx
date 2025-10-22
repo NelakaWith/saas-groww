@@ -85,12 +85,42 @@ function WhyUsCommunity() {
                 className="w-full h-auto mx-auto"
               />
             </div>
-            <div className="rounded-2xl glass-xl p-8 flex-1">
-              <h2 className="font-bold text-2xl mt-4">10 Million+ Downloads</h2>
-              <p className="mt-2">
-                Join millions of users who have downloaded Groww and are
-                benefiting from our comprehensive financial tools and resources.
-              </p>
+            <div className="rounded-2xl glass-xl p-8 flex-1 flex flex-col justify-between">
+              <div>
+                <h2 className="font-bold text-2xl">10 Million+ Downloads</h2>
+                <p className="mt-2">
+                  Join millions of users who have downloaded Groww and are
+                  benefiting from our comprehensive financial tools and
+                  resources.
+                </p>
+                <Button
+                  className="mt-4"
+                  text="Join Now"
+                  type="outline"
+                  size="sm"
+                  icon={<IconArrowCircleUpright size={24} />}
+                />
+              </div>
+              <div className="w-full flex justify-center items-center mt-11">
+                <div className="flex -space-x-6 items-center me-2">
+                  <img
+                    className="w-11 h-11 rounded-full"
+                    src="https://i.pravatar.cc/45?img=1"
+                    alt="User 1"
+                  />
+                  <img
+                    className="w-11 h-11 rounded-full"
+                    src="https://i.pravatar.cc/45?img=2"
+                    alt="User 2"
+                  />
+                  <img
+                    className="w-11 h-11 rounded-full"
+                    src="https://i.pravatar.cc/45?img=3"
+                    alt="User 3"
+                  />
+                </div>
+                <span>Trusted by 20000+ Clients</span>
+              </div>
             </div>
           </div>
         </div>
