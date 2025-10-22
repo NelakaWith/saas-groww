@@ -101,7 +101,7 @@ function WhyUsCommunity() {
                   icon={<IconArrowCircleUpright size={24} />}
                 />
               </div>
-              <div className="w-full flex justify-center items-center mt-11">
+              <div className="w-full flex justify-start items-center mt-11">
                 <div className="flex -space-x-6 items-center me-2">
                   <img
                     className="w-11 h-11 rounded-full"
