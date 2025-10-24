@@ -1,36 +1,77 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# saas-groww — Next.js + Tailwind demo (Figma → App conversion)
 
-First, run the development server:
+This repository is a small demo landing project that showcases building a modern, responsive Next.js application styled with Tailwind CSS. It also demonstrates a Figma-to-app conversion workflow: taking a Figma design and implementing it as reusable React components and styles.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Purpose
+
+- Serve as a compact example of an App Router-based Next.js site using Tailwind CSS utilities and custom styles.
+- Demonstrate practical Figma → App conversion patterns: design tokens (CSS variables), Tailwind theme mapping, reusable components (Button, Header, Logo), and layout patterns (responsive grids, horizontal scrollers).
+- Provide a starting point for experimenting with visual effects (glassmorphism, backdrop-filter), accessible components, and small UI utilities.
+
+Key ideas showcased
+
+- Next.js App Router structure (server components + client components where appropriate).
+- Tailwind CSS v3 utilities, extended theme colors mapped from design tokens.
+- Component-first approach: small, focused components (buttons, icons, sections) that can be composed into pages.
+- Responsive patterns: mobile-first breakpoints, horizontal scrolling with static edge gradients, and equal-height card layouts.
+- Accessibility considerations: focus-visible outlines, semantic headings, and keyboard-friendly interactions.
+
+Quick start
+
+1. Install dependencies
+
+```powershell
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the dev server (Windows PowerShell)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```powershell
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open http://localhost:3000 in your browser.
 
-## Learn More
+Useful scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` — development server
+- `npm run build` — production build
+- `npm run start` — run production build locally
+- `npm run lint` — run ESLint
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tailwind / PostCSS notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Tailwind is configured in `tailwind.config.cjs` and reads content from the `src` folder.
+- Custom design tokens are exposed as CSS variables in `src/styles/globals.css` and mapped into the Tailwind theme for utility use.
+- PostCSS is configured in `postcss.config.mjs` with `tailwindcss` and `autoprefixer` plugins.
 
-## Deploy on Vercel
+Figma → App tips used in this project
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Extract color tokens and map them to CSS variables. Use those variables in Tailwind theme for consistent utilities.
+- Convert SVG icons to small React components that use `fill="currentColor"` so they can be styled via color utilities.
+- Build small presentational components (Button, SectionTag, Logo) first, then compose them into section-level components (Hero, WhyUs, Partners).
+- Reserve JS for interactive concerns only (e.g., client-only equalization or responsive behavior). Prefer CSS-first solutions for layout where practical.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Files of interest
+
+- `src/app/layout.tsx` — global layout and top-level composition
+- `src/styles/globals.css` — Tailwind directives, CSS variables, and custom utilities (glass, scroll-fade)
+- `src/components/common` — shared components (Button, Header, Logo, SectionTag)
+- `src/components/sections` — page sections (Hero, WhyUs, Partners, etc.)
+
+Gotchas & troubleshooting
+
+- Hydration mismatches: Ensure client-only code (hooks, window access) is wrapped with `"use client"` and not executed on the server. If you see hydration warnings, check for runtime-only values (Date.now, Math.random) or browser extensions injecting DOM differences.
+- SVG icons: Prefer `currentColor` + inline components to avoid cross-origin or fill override issues.
+- Horizontal scrollers: use `overflow-x-auto` with `no-scrollbar` utilities and place static overlays (fade gradients) on a non-scrolling parent so they don't move with content.
+
+Next steps / ideas
+
+- Convert all images to inline SVG components to make them theme-aware and reduce layout shifts.
+- Add tests for key components (Jest + React Testing Library) and static type checks for components (migrate to `.tsx`).
+- Create a small design tokens export script to keep Figma tokens in sync with `globals.css`.
+
+License
+GNU GENERAL PUBLIC LICENSE
