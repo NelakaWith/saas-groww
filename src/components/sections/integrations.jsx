@@ -1,9 +1,21 @@
+import SectionTag from "../common/sectionTag";
+import IconifyClient from "../common/IconifyClient";
+
 function Integrations() {
   return (
-    <div>
-      <h2>Integrations</h2>
-      <p>Connect with your favorite tools and services.</p>
-    </div>
+    <section className="mt-8">
+      <div className="px-8 text-center">
+        <SectionTag title="Integration" />
+        <h2 className="font-bold text-4xl mt-4">
+          We Offers Wide Range of Integrations
+        </h2>
+        <p className="mt-2">
+          Seamlessly connect with popular tools and platforms to enhance your
+          workflow and productivity.
+        </p>
+        <IconifyClient icon="mdi-light:alert" />
+      </div>
+    </section>
   );
 }
 
