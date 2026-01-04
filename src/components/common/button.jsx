@@ -58,7 +58,7 @@ function Button({
       className={`${baseClasses} ${className} ${sizeClasses[size]} ${typeClasses[type]}`}
       {...props}
     >
-      <span>{text}</span>
+      <span className="w-full">{text}</span>
       {renderIcon()}
     </button>
   );

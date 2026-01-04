@@ -13,7 +13,6 @@ function Integrations() {
           Seamlessly connect with popular tools and platforms to enhance your
           workflow and productivity.
         </p>
-        <IconifyClient icon="mdi-light:alert" />
       </div>
     </section>
   );
