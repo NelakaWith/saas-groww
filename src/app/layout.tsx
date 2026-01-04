@@ -8,14 +8,14 @@ const poppins = Poppins({
 });
 import type { Metadata } from "next";
 import Header from "@/components/common/header";
-import HeroSection from "@/components/sections/hero";
-import Partners from "@/components/sections/partners";
+import HeroSection from "@/components/sections/heroSection";
+import Partners from "@/components/sections/partnersSection";
 import WhyUsInsights from "@/components/sections/whyUsInsights";
 import WhyUsBeyondLimits from "@/components/sections/whyUsBeyondLimits";
 import WhyUsCommunity from "@/components/sections/whyUsCommunity";
 import WhyUsPlans from "@/components/sections/whyUsPlans";
-import Integrations from "@/components/sections/integrations";
-import Pricing from "@/components/sections/pricing";
+import Integrations from "@/components/sections/integrationsSection";
+import Pricing from "@/components/sections/pricingSection";
 
 import "../styles/globals.css";
 
