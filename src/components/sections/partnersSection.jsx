@@ -10,12 +10,12 @@ const partnerLogos = [
 
 function Partners() {
   return (
-    <section className="mt-16">
+    <section className="mt-16 lg:mt-52">
       <h2 className="text-neutral-400 text-2xl text-center">
         Trusted by global brands
       </h2>
       <div className="relative scroll-fade mt-8">
-        <div className="px-4 inline-flex items-center overflow-x-auto w-full no-scrollbar">
+        <div className="px-4 inline-flex items-center justify-center overflow-x-auto w-full no-scrollbar">
           {partnerLogos.map((logo, index) => (
             <Image
               key={index}
