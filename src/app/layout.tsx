@@ -11,6 +11,7 @@ import Integrations from "@/components/sections/integrationsSection";
 import Pricing from "@/components/sections/pricingSection";
 import FaqSection from "@/components/sections/faqSection";
 import LetsTalk from "@/components/sections/letsTalk";
+import Footer from "@/components/common/appFooter";
 
 import "../styles/globals.css";
 
@@ -41,6 +42,7 @@ export default function RootLayout() {
         <Pricing />
         <FaqSection />
         <LetsTalk />
+        <Footer />
       </body>
     </html>
   );

@@ -4,7 +4,7 @@ import IconArrowCircleUpright from "../vectors/arrowCircleUpright";
 
 function HeroSection() {
   return (
-    <section className=" hero-glow h-auto min-h-screen">
+    <section className="hero-glow h-auto min-h-screen">
       <div className="flex flex-col justify-center items-center pt-48 mx-5">
         <Button
           text="Elevate your journey! Read More"
