@@ -42,7 +42,12 @@ function HeroSection() {
             width={200}
             height={200}
             priority
-            className="w-80 h-auto max-w-[360px]"
+            className="w-80 h-auto max-w-[360px] lg:hidden"
+          />
+          <img
+            src="/desktop.png"
+            alt="Hero Image"
+            className="w-5/6 mx-auto hidden lg:block object-contain"
           />
         </div>
       </div>
