@@ -1,5 +1,4 @@
 import SectionTag from "../common/sectionTag";
-import IconifyClient from "../common/IconifyClient";
 
 function Integrations() {
   return (
