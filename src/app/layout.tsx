@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import Header from "@/components/common/header";
+import Header from "@/components/common/appHeader";
 import HeroSection from "@/components/sections/heroSection";
 import Partners from "@/components/sections/partnersSection";
 import WhyUsInsights from "@/components/sections/whyUsInsights";
