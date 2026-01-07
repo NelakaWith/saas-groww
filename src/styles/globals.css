@@ -82,7 +82,7 @@ body {
     bottom: 0;
     width: 128px;
     pointer-events: none;
-    z-index: 30;
+    z-index: 20;
   }
 
   .scroll-fade::before {

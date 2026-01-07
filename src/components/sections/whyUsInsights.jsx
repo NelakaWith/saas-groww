@@ -31,8 +31,8 @@ function WhyUsInsights() {
   return (
     <section className="mt-16">
       <div className="text-center w-full px-16">
-        <SectionTag title="Why Choose Us" />
-        <h2 className="mt-7 mx-auto max-w-[360px] font-bold text-3xl md:text-6xl text-center">
+        <SectionTag title="Why Choose Groww" />
+        <h2 className="mt-7 mx-auto max-w-[360px] md:max-w-[800px] font-bold text-3xl md:text-6xl text-center">
           Get Clear Insights into Your Start-up’s Finances
         </h2>
       </div>

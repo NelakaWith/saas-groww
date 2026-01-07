@@ -4,7 +4,7 @@ import IconArrowCircleUpright from "../vectors/arrowCircleUpright";
 
 function Header() {
   return (
-    <header className="rounded-full px-6 py-5 glass-xl fixed start-0 end-0 top-5 z-10 mx-5 my-2 flex justify-between items-center">
+    <header className="rounded-full px-6 py-5 glass-xl fixed start-0 end-0 top-5 z-30 mx-5 my-2 flex justify-between items-center">
       <div className="w-full flex justify-between align-middle items-center">
         <Image src="/logo.svg" alt="Logo" width={40} height={40} />
         <nav className="flex items-center">
