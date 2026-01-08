@@ -45,12 +45,12 @@ function Faq() {
   };
 
   return (
-    <section className="mt-16">
-      <div className="flex flex-col px-8">
+    <section className="mt-16 md:mt-52 md:mx-auto md:max-w-7xl">
+      <div className="flex flex-col md:flex-row px-8">
         <div className="flex-1">
           <SectionTag title="FAQs" />
-          <h2 className="font-bold text-2xl mt-4">
-            We Offers Wide Range of Integrations
+          <h2 className="font-bold text-2xl md:text-4xl mt-4">
+            Common Questions
           </h2>
           <p className="text-sm mt-4 text-neutral-400">
             Haven’t found what you’re looking for?
