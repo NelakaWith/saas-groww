@@ -7,7 +7,7 @@ function Header() {
     <header className="rounded-full px-6 py-5 glass-xl fixed start-0 end-0 top-5 z-30 mx-5 my-2 flex justify-between items-center">
       <div className="w-full flex justify-between align-middle items-center">
         <Image src="/logo.svg" alt="Logo" width={40} height={40} />
-        <nav className="flex items-center">
+        <nav className="items-center hidden lg:flex">
           <ul>
             <li className="inline-block mx-4 cursor-pointer">Features</li>
             <li className="inline-block mx-4 cursor-pointer">Community</li>
