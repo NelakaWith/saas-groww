@@ -1,7 +1,6 @@
 import Button from "../common/button";
 import SectionTag from "../common/sectionTag";
 import IconArrowCircleUpright from "../vectors/arrowCircleUpright";
-import Image from "next/image";
 
 function WhyUsCommunity() {
   return (
@@ -16,10 +15,10 @@ function WhyUsCommunity() {
           </p>
         </div>
         {/* top half */}
-        <div className="mt-8 flex-col px-8">
-          <div className="flex flex-col gap-8">
-            <div className="flex flex-col gap-8 bg-neutral-800 rounded-2xl border-spacing-1 border-neutral-400 p-8">
-              <div className="flex-1">
+        <div className="mt-8 flex-col md:max-w-7xl md:mx-auto px-8">
+          <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex flex-col md:flex-row gap-8 bg-neutral-800 rounded-2xl border-spacing-1 border-neutral-400 p-8">
+              <div className="flex-1 md:flex-col md:items-center md:justify-center">
                 <h2 className="text-2xl font-medium">
                   Tailored Financial Plans By Experts
                 </h2>
@@ -34,30 +33,33 @@ function WhyUsCommunity() {
                   icon={<IconArrowCircleUpright size={24} />}
                 />
               </div>
-              <div className="flex-1">
-                <Image
+              <div className="flex-1 md:flex md:items-center md:justify-center">
+                <img
                   src="/card.png"
                   alt="Tailored Financial Plans"
-                  width={300}
-                  height={200}
-                  className="w-full h-auto mx-auto"
+                  className="w-full h-auto mx-auto md:mx-0 md:w-72"
                 />
               </div>
             </div>
             <div>
-              <Image
+              <img
                 src="/coins.png"
                 alt="Tailored Financial Plans"
-                width={200}
-                height={200}
                 className="w-full h-auto mx-auto"
               />
             </div>
           </div>
         </div>
         {/* bottom half */}
-        <div className="mt-8 flex-col px-8">
-          <div className="grid grid-cols-1 grid-rows-3 auto-rows-fr gap-8">
+        <div className="mt-8 flex-col md:max-w-7xl md:mx-auto px-8">
+          <div className="grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 auto-rows-fr gap-8">
+            <div className="flex-1">
+              <img
+                src="/coins.png"
+                alt="Tailored Financial Plans"
+                className="w-full h-auto mx-auto"
+              />
+            </div>
             <div className="grid grid-cols-2 gap-6 flex-1">
               {Array.from({ length: 4 }).map((_, index) => (
                 <div
@@ -66,24 +68,13 @@ function WhyUsCommunity() {
                     index == 3 ? "bg-brand-300" : "glass-xl"
                   }`}
                 >
-                  <Image
+                  <img
                     src={`/randomLogo0${index + 1}.svg`}
                     alt={`Community Image ${index}`}
-                    width={48}
-                    height={48}
                     className=""
                   />
                 </div>
               ))}
-            </div>
-            <div className="flex-1">
-              <Image
-                src="/coins.png"
-                alt="Tailored Financial Plans"
-                width={200}
-                height={200}
-                className="w-full h-auto mx-auto"
-              />
             </div>
             <div className="rounded-2xl glass-xl p-8 flex-1 flex flex-col justify-between">
               <div>
