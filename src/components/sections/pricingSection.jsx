@@ -53,11 +53,11 @@ const packages = [
 
 function Pricing() {
   return (
-    <section className="mt-16">
+    <section className="mt-16 md:mt-52 md:mx-auto md:max-w-7xl">
       <div className="px-8 text-center">
         <SectionTag title="Pricing" />
         <h2 className="font-bold text-4xl mt-4">Our Offer For Everyone</h2>
-        <p className="mt-2">
+        <p className="mt-2 text-neutral-400">
           officer youth hesitation girl servant widow hurt spot imagine bow log
           solve stuff compare various even cultivate coward.
         </p>
@@ -102,8 +102,8 @@ function Pricing() {
             </div>
           ))}
         </div>
-        <div className="text-center flex flex-col gap-8 rounded-2xl border-spacing-1 border-neutral-400 p-8 mt-10 bg-gradient-to-b from-brand-300 via-25% via-brand-400 to-75% to-neutral-800">
-          <span className="font-semibold text-xl">
+        <div className="text-center flex flex-col md:flex-row md:items-center md:justify-between gap-8 rounded-2xl border-spacing-1 border-neutral-400 p-8 mt-10 bg-gradient-to-b md:bg-gradient-to-r from-brand-300 via-25% via-brand-400 to-75% to-neutral-800">
+          <span className="font-semibold text-xl md:text-4xl">
             Grab it fast to Get Special Price
           </span>
           <Button

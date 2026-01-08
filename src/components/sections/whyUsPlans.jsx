@@ -30,16 +30,18 @@ const features = [
 
 function WhyUsPlans() {
   return (
-    <section className="mt-8">
-      <div className="flex flex-col w-full px-4 items-center gap-8">
-        <div className="px-8 text-center">
+    <section className="mt-8 md:mt-52">
+      <div className="flex flex-col md:flex-row w-full px-4 items-center md:items-start gap-8 md:max-w-7xl md:mx-auto">
+        <div className="px-8 text-center md:text-start md:flex-1">
           <SectionTag title="Why Choose Groww" />
           <h2 className="font-bold text-4xl mt-4">
             Tailored Financial Plans By Experts
           </h2>
-          <p className="mt-2">
+          <p className="mt-2 text-neutral-400">
             Get personalized investment strategies crafted by our team of
-            financial advisors.
+            financial advisors. Our experts analyze your goals and risk profile
+            to create customized solutions that maximize returns while
+            minimizing risks.
           </p>
           <Button
             className="mt-6"
@@ -48,10 +50,13 @@ function WhyUsPlans() {
             icon={<IconArrowCircleUpright size={24} />}
           />
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 auto-rows-fr gap-8 px-8 ">
+        <div className="grid grid-cols-2 grid-rows-2 auto-rows-fr gap-8 px-8 md:flex-1">
           {features.map((feature, index) => (
-            <div key={index} className="flex flex-col items-start text-center">
-              <div className="p-4 mx-auto rounded-2xl bg-neutral-800">
+            <div
+              key={index}
+              className="flex flex-col items-start text-center md:text-start"
+            >
+              <div className="p-4 mx-auto md:mx-0 rounded-2xl bg-neutral-800">
                 <Image
                   src={feature.icon}
                   alt={feature.title}

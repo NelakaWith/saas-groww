@@ -4,7 +4,7 @@ import IconArrowCircleUpright from "../vectors/arrowCircleUpright";
 
 function WhyUsCommunity() {
   return (
-    <section className="mt-8">
+    <section className="mt-8 md:mt-52">
       <div className="w-full px-4">
         <div className="text-center px-16">
           <SectionTag title="Why Choose Groww" />
@@ -15,7 +15,7 @@ function WhyUsCommunity() {
           </p>
         </div>
         {/* top half */}
-        <div className="mt-8 flex-col md:max-w-7xl md:mx-auto px-8">
+        <div className="mt-8 md:mt-16 flex-col md:max-w-7xl md:mx-auto px-8">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="flex flex-col md:flex-row gap-8 bg-neutral-800 rounded-2xl border-spacing-1 border-neutral-400 p-8">
               <div className="flex-1 md:flex-col md:items-center md:justify-center">
@@ -64,7 +64,7 @@ function WhyUsCommunity() {
               {Array.from({ length: 4 }).map((_, index) => (
                 <div
                   key={index}
-                  className={`rounded-2xl h-40 flex items-center justify-center ${
+                  className={`rounded-2xl h-full flex items-center justify-center ${
                     index == 3 ? "bg-brand-300" : "glass-xl"
                   }`}
                 >
