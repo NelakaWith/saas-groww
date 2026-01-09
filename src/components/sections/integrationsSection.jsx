@@ -2,7 +2,7 @@ import SectionTag from "../common/sectionTag";
 
 function Integrations() {
   return (
-    <section className="mt-8 md:mt-52 md:mx-auto md:max-w-7xl">
+    <section className="mt-16 md:mt-52 md:mx-auto md:max-w-7xl">
       <div className="px-8 text-center">
         <SectionTag title="Integration" />
         <h2 className="font-bold text-4xl mt-4">

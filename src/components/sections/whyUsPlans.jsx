@@ -30,7 +30,7 @@ const features = [
 
 function WhyUsPlans() {
   return (
-    <section className="mt-8 md:mt-52">
+    <section className="mt-16 md:mt-52">
       <div className="flex flex-col md:flex-row w-full px-4 items-center md:items-start gap-8 md:max-w-7xl md:mx-auto">
         <div className="px-8 text-center md:text-start md:flex-1">
           <SectionTag title="Why Choose Groww" />
